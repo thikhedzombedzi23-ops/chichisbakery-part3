@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Chichi's Bakery</title>
+  <meta name="description" content="Get in touch with Chichi's Bakery. Find our location, opening hours and send us a message.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Chichi's Bakery logo">
+        Chichi's Bakery
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <h1>Contact Us</h1>
+    </section>
+
+    
+    <section class="contact-details">
+      <h2>Visit or Reach Us</h2>
+      <address>
+        123 Ndalama Street, Muswodi, South Africa<br>
+        Tel: 015 345 6789<br>
+        Email: hello@chichisbakery.co.za<br>
+
+        Tshilamba Mall,shop no 12, 45 Main Road, South Africa<br>
+        Tel: 015 987 6543<br>
+        Email: hello@chichisbakery.co.za
+      </address>
+      <p>Open Tuesday &ndash; Sunday, 07:00 &ndash; 16:00. Closed Mondays.</p>
+    </section>
+
+    <section class="map-section">
+      <h2>Find Us</h2>
+      <div class="tabs">
+        <div class="tab-list" role="tablist" aria-label="Choose a location">
+          <button type="button" role="tab" id="tab-shop" class="active" aria-selected="true" aria-controls="map-shop">Muswodi Shop</button>
+          <button type="button" role="tab" id="tab-mall" aria-selected="false" aria-controls="map-mall">Tshilamba Mall</button>
+        </div>
+        <div class="map-embed" id="map-shop" role="tabpanel" aria-labelledby="tab-shop">
+          <iframe title="Map showing the Chichi's Bakery Muswodi shop" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3683.913987391916!2d30.5274046753008!3d-22.582320079484816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1788972894272!5m2!1sen!2sza" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="map-embed" id="map-mall" role="tabpanel" aria-labelledby="tab-mall" hidden>
+          <iframe title="Map showing Tshilamba Mall" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2383953.9639046625!2d28.048592692061362!3d-24.24971388196666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stshilamba%20mall!5e1!3m2!1sen!2sza!4v1789080655367!5m2!1sen!2sza" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post" id="contact-form">
+
+        <label for="c-full-name">Full Name</label>
+        <input type="text" id="c-full-name" name="full-name" required>
+
+        <label for="c-email">Email Address</label>
+        <input type="email" id="c-email" name="email" required>
+
+        <label for="c-message-type">Message Type</label>
+        <select id="c-message-type" name="message-type" required>
+          <option value="">-- Please select --</option>
+          <option value="general">General Question</option>
+          <option value="feedback">Feedback</option>
+          <option value="complaint">Complaint</option>
+          <option value="press">Media / Press</option>
+        </select>
+
+        <label for="c-message">Message</label>
+        <textarea id="c-message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div id="contact-response"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>123 Ndalama Street, Muswodi, South Africa</p>
+    <p>Open Tuesday &ndash; Sunday, 07:00 &ndash; 16:00</p>
+    <p>&copy; 2026 Chichi's Bakery. All rights reserved.</p>
+  </footer>
+  <script src="js/forms.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products | Chichi's Bakery</title>
+  <meta name="description" content="Browse Chichi's Bakery's range of artisan bread, celebration cakes and daily-fresh pastries.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Chichi's Bakery logo">
+        Chichi's Bakery
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <h1>Our Products</h1>
+      <p>Freshly baked, every single day.</p>
+    </section>
+
+    
+    <section class="product-controls" aria-label="Search and filter products">
+      <div class="controls-row">
+        <div>
+          <label for="product-search">Search</label>
+          <input type="search" id="product-search" placeholder="e.g. sourdough, chocolate">
+        </div>
+        <div>
+          <label for="product-category">Category</label>
+          <select id="product-category">
+            <option value="all">All products</option>
+            <option value="bread">Fresh Bread</option>
+            <option value="cakes">Celebration Cakes</option>
+            <option value="pastries">Pastries</option>
+          </select>
+        </div>
+        <div>
+          <label for="product-sort">Sort by</label>
+          <select id="product-sort">
+            <option value="default">Featured</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="name">Name (A&ndash;Z)</option>
+          </select>
+        </div>
+        <button type="button" id="product-reset" class="reset-btn">Reset</button>
+      </div>
+      <p id="product-count" aria-live="polite"></p>
+    </section>
+
+    <section class="product-category" id="products-section">
+      <h2>Our Bakes</h2>
+      <ul id="product-list"></ul>
+      <p id="no-results" hidden>No products match your search. Try a different word or reset the filters.</p>
+      <p><a href="enquiry.html">Request a custom cake quote &rarr;</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>123 Ndalama Street, Muswodi, South Africa</p>
+    <p>Open Tuesday &ndash; Sunday, 07:00 &ndash; 16:00</p>
+    <p>&copy; 2026 Chichi's Bakery. All rights reserved.</p>
+  </footer>
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

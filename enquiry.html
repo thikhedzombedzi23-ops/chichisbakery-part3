@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquire | Chichi's Bakery</title>
+  <meta name="description" content="Request a quote for a celebration cake or catering order from Chichi's Bakery.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Chichi's Bakery logo">
+        Chichi's Bakery
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <h1>Cake and Catering Enquiry</h1>
+      <p>Tell us what you need and we'll get back to you with a quote and availability.</p>
+    </section>
+
+    
+    <section class="enquiry-form">
+      <form action="#" method="post" id="enquiry-form">
+
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="0821234567">
+
+        <label for="enquiry-type">What are you enquiring about?</label>
+        <select id="enquiry-type" name="enquiry-type" required>
+          <option value="">-- Please select --</option>
+          <option value="cake">Celebration Cake</option>
+          <option value="catering">Catering / Bulk Order</option>
+          <option value="wholesale">Wholesale Bread Supply</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="event-date">Date Required</label>
+        <input type="date" id="event-date" name="event-date">
+
+        <label for="message">Details</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about the size, flavour, servings or occasion" required></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+      </form>
+
+      <div id="enquiry-response"></div>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <h3><button type="button" class="accordion-btn" id="faq-btn-1" aria-expanded="false" aria-controls="faq-1">How much notice do you need for a cake?</button></h3>
+          <div class="accordion-panel" id="faq-1" hidden><p>We recommend at least 3 days&rsquo; notice for celebration cakes, and a week for weddings or large events.</p></div>
+        </div>
+        <div class="accordion-item">
+          <h3><button type="button" class="accordion-btn" id="faq-btn-2" aria-expanded="false" aria-controls="faq-2">Do you cater for allergies?</button></h3>
+          <div class="accordion-panel" id="faq-2" hidden><p>Please mention any allergies in the details box. Our kitchen handles wheat, dairy, eggs and nuts, so we cannot guarantee allergen-free products.</p></div>
+        </div>
+        <div class="accordion-item">
+          <h3><button type="button" class="accordion-btn" id="faq-btn-3" aria-expanded="false" aria-controls="faq-3">Do you deliver?</button></h3>
+          <div class="accordion-panel" id="faq-3" hidden><p>Delivery is available for larger orders in the Muswodi area. Ask us when you enquire.</p></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>123 Ndalama Street, Muswodi, South Africa</p>
+    <p>Open Tuesday &ndash; Sunday, 07:00 &ndash; 16:00</p>
+    <p>&copy; 2026 Chichi's Bakery. All rights reserved.</p>
+  </footer>
+  <script src="js/forms.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
