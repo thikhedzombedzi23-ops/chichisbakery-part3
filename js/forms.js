@@ -1,9 +1,7 @@
 
 
 var CONTACT_EMAIL = 'thikhedzombedzi23@gmail.com';
-// Put a real form-handling URL here (e.g. Formspree) to send enquiries for real.
-// While it is empty, submission is simulated so the AJAX flow can still be demonstrated.
-var ENQUIRY_ENDPOINT = 'thikhedzombedzi23@gmail.com';
+var ENQUIRY_ENDPOINT = 'https://formspree.io/f/xkjjpgne';
 
 /* ---------- Validation rules ---------- */
 var rules = {
