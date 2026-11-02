@@ -141,6 +141,7 @@ What was added for Part 3:
 | 2026-10-29 | enquiry.html: added an FAQ accordion |
 | 2026-10-29 | Added `robots.txt` and `sitemap.xml` |
 | 2026-10-29 | Appended Part 3 styles to `css/style.css` (validation errors, lightbox, accordion, tabs, product filters, animations, reduced-motion support) |
+| 2026-11-02 | Connected the enquiry form to Formspree so submissions are sent by AJAX to a real endpoint
 
 ## References
 
