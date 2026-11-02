@@ -112,10 +112,9 @@ What was added for Part 3:
 - **`js/products.js`** (products.html): the product list is now loaded dynamically from a JavaScript array, with live search, a category filter and sorting by price or name.
 - **`js/forms.js`** (enquiry.html and contact.html): client-side validation with inline error messages (name, email, SA phone number, date not in the past, message length) and AJAX (`fetch`) submission.
   - **Enquiry form:** once valid, shows a response with pricing and availability based on the enquiry type and date (closed Mondays, 3 days&rsquo; notice for cakes/catering).
-  - **Contact form:** once valid, builds an email to hello@chichisbakery.co.za with the name, type and message using a `mailto:` link.
 - **FAQ accordion** added to enquiry.html; **tabs** added to contact.html to switch between the two location maps.
 - **SEO:** added `robots.txt` and `sitemap.xml`; each page keeps its own title, meta description and heading structure; images use alt text.
-- **Deployment:** hosted on Netlify (link to be added here once live).
+- **Deployment:** hosted on github.
 
 ## Changelog
 | Date | Change |
